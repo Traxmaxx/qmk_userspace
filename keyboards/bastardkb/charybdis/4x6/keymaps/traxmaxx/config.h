@@ -17,6 +17,7 @@
 #pragma once
 
 #define COMBO_TERM 30  // or 35–40 if you press slowly
+#define CHARYBDIS_MINIMUM_DEFAULT_DPI 3400 // Total range from 400 to 3,400 (400 → 600 → 800 → … → 3,400)
 
 #ifdef VIA_ENABLE
 /* VIA configuration. */
