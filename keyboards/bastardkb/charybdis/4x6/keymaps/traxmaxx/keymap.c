@@ -63,7 +63,6 @@ enum combo_events {
     COMBO_XC,
     COMBO_CV,
 };
-#define TAPPING_TERM 180
 
 // 2. Define which keys make up each combo
 const uint16_t PROGMEM combo_WE[] = { KC_W, KC_E, COMBO_END };
