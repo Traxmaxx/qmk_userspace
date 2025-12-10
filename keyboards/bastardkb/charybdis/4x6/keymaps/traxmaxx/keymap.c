@@ -100,7 +100,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_ESC,    LT(3,KC_Z),    MT(MOD_LCTL,KC_X),    KC_C,    KC_V,    KC_B,       KC_N,    KC_M, KC_COMM,  KC_DOT, PT_SLSH, KC_BSLS,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                    MO(1), KC_LGUI,   KC_ENT,      MO(2),  KC_SPC,
-                                           KC_LALT, MC_MS_BTN1,     KC_BSPC
+                                           KC_LALT, KC_MS_BTN1,     KC_BSPC
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
 
