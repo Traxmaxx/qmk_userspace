@@ -18,7 +18,6 @@
 
 #define COMBO_TERM 30  // or 35–40 if you press slowly
 #define CHARYBDIS_MINIMUM_DEFAULT_DPI 3400 // Total range from 400 to 3,400 (400 → 600 → 800 → … → 3,400)
-#define POINTING_DEVICE_ENABLE
 
 #ifdef VIA_ENABLE
 /* VIA configuration. */
@@ -36,5 +35,5 @@
 // Automatically enable the pointer layer when moving the trackball.  See also:
 #	 define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
 #	 define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_TIMEOUT_MS 2000
-#    define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_THRESHOLD 8`
+#    define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_THRESHOLD 8
 #endif // POINTING_DEVICE_ENABLE
