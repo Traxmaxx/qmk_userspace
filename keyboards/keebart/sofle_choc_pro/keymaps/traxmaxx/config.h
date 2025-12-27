@@ -4,7 +4,6 @@
 #define VIAL_KEYBOARD_UID {0x12, 0x34, 0x56, 0x78, 0x9A, 0xBC, 0xDE, 0xF0}
 #define VIAL_UNLOCK_COMBO_ROWS { 0, 5 }
 #define VIAL_UNLOCK_COMBO_COLS { 0, 0 }
-#define DYNAMIC_KEYMAP_LAYER_COUNT 10
 #define VIAL_INSECURE
 
 // limits the number of LEDs to process in an animation per task run (increases keyboard responsiveness)
