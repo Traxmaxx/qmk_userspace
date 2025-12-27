@@ -18,11 +18,10 @@
 
 /* Improve responsiveness */
 /* Reduce debounce time */
-#define DEBOUNCE 3
+/* #define DEBOUNCE 3
 /* enable symm debounce algorithm */
 /* #define DEBOUNCE_TYPE sym_eager_pk
 /* 1000Hz polling rate (1ms) */
-
 #define USB_POLLING_INTERVAL_MS 1
 /* Improve clock speed for faster matrix scanning
  * Lsuffix makes sure it's of type long
@@ -33,7 +32,7 @@
 /* Comboterm timeout
  * 35–40 if you press slowly
  */
-#define COMBO_TERM 35
+#define COMBO_TERM 30
 /* Trackball DPI
  * Total range from 400 to 3,400 (400 → 600 → 800 → … → 3,400)
  */
