@@ -8,21 +8,73 @@
         "cols": 6
     },
     "customKeycodes": [
-        { "name": "DPI_MOD", "shortName": "DPI_MOD", "title": "Cycle Default DPI" },
-        { "name": "DPI_RMOD", "shortName": "DPI_RMOD", "title": "Cycle Default DPI (Reverse)" },
-        { "name": "S_D_MOD", "shortName": "S_D_MOD", "title": "Cycle Sniping DPI" },
-        { "name": "S_D_RMOD", "shortName": "S_D_RMOD", "title": "Cycle Sniping DPI (Reverse)" },
-        { "name": "SNIPING", "shortName": "SNIPING", "title": "Sniping Mode (Hold)" },
-        { "name": "SNP_TOG", "shortName": "SNP_TOG", "title": "Sniping Mode Toggle" },
-        { "name": "DRGSCRL", "shortName": "DRGSCRL", "title": "Drag Scroll (Hold)" },
-        { "name": "DRG_TOG", "shortName": "DRG_TOG", "title": "Drag Scroll Toggle" }
+        {
+            "name": "DPI_MOD",
+            "shortName": "DPI_MOD",
+            "title": "Cycle Default DPI"
+        },
+        {
+            "name": "DPI_RMOD",
+            "shortName": "DPI_RMOD",
+            "title": "Cycle Default DPI (Reverse)"
+        },
+        {
+            "name": "S_D_MOD",
+            "shortName": "S_D_MOD",
+            "title": "Cycle Sniping DPI"
+        },
+        {
+            "name": "S_D_RMOD",
+            "shortName": "S_D_RMOD",
+            "title": "Cycle Sniping DPI (Reverse)"
+        },
+        {
+            "name": "SNIPING",
+            "shortName": "SNIPING",
+            "title": "Sniping Mode (Hold)"
+        },
+        {
+            "name": "SNP_TOG",
+            "shortName": "SNP_TOG",
+            "title": "Sniping Mode Toggle"
+        },
+        {
+            "name": "DRGSCRL",
+            "shortName": "DRGSCRL",
+            "title": "Drag Scroll (Hold)"
+        },
+        {
+            "name": "DRG_TOG",
+            "shortName": "DRG_TOG",
+            "title": "Drag Scroll Toggle"
+        },
+        {
+            "name": "MA_TOGG",
+            "shortName": "MA_TOGG",
+            "title": "Mouse Accel Toggle"
+        },
+        {
+            "name": "MA_TKOF",
+            "shortName": "MA_TKOF",
+            "title": "Mouse Accel Takeoff"
+        },
+        {
+            "name": "MA_GROW",
+            "shortName": "MA_GROW",
+            "title": "Mouse Accel Growth Rate"
+        },
+        {
+            "name": "MA_OFST",
+            "shortName": "MA_OFST",
+            "title": "Mouse Accel Offset"
+        },
+        {
+            "name": "MA_LMT",
+            "shortName": "MA_LMT",
+            "title": "Mouse Accel Limit"
+        }
     ],
-    "layers": [
-        "Base",
-        "Lower",
-        "Raise",
-        "Pointer"
-    ],
+    "layers": ["Base", "Lower", "Raise", "Pointer"],
     "layouts": {
         "labels": [["Trackball", "Right", "Left"]],
         "keymap": [
