@@ -8,6 +8,9 @@ CAPS_WORD_ENABLE   = yes
 REPEAT_KEY_ENABLE  = yes
 COMBO_ENABLE = yes
 
+# drashna pointer acceleration module
+POINTING_DEVICE_ACCEL_VIA_ENABLE = yes
+
 RGB_MATRIX_ENABLE = yes
 # Enable a more recent version of the RGB protocol
 VIALRGB_ENABLE = yes

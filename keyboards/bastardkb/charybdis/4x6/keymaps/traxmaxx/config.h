@@ -17,10 +17,6 @@
 #pragma once
 
 /* Improve responsiveness */
-/* Reduce debounce time */
-/* #define DEBOUNCE 3 */
-/* enable symm debounce algorithm */
-/* #define DEBOUNCE_TYPE sym_eager_pk */
 /* 1000Hz polling rate (1ms) */
 #define USB_POLLING_INTERVAL_MS 1
 /* Improve clock speed for faster matrix scanning
@@ -37,6 +33,15 @@
  * Total range from 400 to 3,400 (400 → 600 → 800 → … → 3,400)
  */
 #define CHARYBDIS_MINIMUM_DEFAULT_DPI 3400
+
+/* Pointing Device Acceleration Configuration
+ * Taken from drashna/qmk_modules
+ *
+ */
+#define POINTING_DEVICE_ACCEL_TAKEOFF 2.0      // lower/higher value = curve takes off more smoothly/abruptly
+#define POINTING_DEVICE_ACCEL_GROWTH_RATE 0.25 // lower/higher value = curve reaches its upper limit slower/faster
+#define POINTING_DEVICE_ACCEL_OFFSET 2.2       // lower/higher value = acceleration kicks in earlier/later
+#define POINTING_DEVICE_ACCEL_LIMIT 0.2        // lower limit of accel curve (minimum acceleration factor)
 
 
 #define VIAL_KEYBOARD_UID {0x92, 0x6A, 0xAC, 0xFB, 0x57, 0x12, 0x42, 0x19}
