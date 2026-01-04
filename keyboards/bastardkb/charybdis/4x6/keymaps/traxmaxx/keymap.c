@@ -182,6 +182,31 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     return state;
 }
 #    endif // CHARYBDIS_AUTO_SNIPING_ON_LAYER
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+#    ifdef CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
+    if (auto_pointer_layer_timer != 0 && record->event.pressed) {
+        switch (keycode) {
+            case KC_BTN1 ... KC_BTN8:
+            case DRGSCRL:
+            case DPI_MOD:
+            case S_D_MOD:
+            case SNIPING:
+                break;
+            default:
+                auto_pointer_layer_timer = 0;
+                layer_off(LAYER_POINTER);
+#        ifdef RGB_MATRIX_ENABLE
+                pointer_rgb_active = false;
+                rgb_matrix_mode_noeeprom(saved_rgb_mode);
+                rgb_matrix_sethsv_noeeprom(saved_rgb_hsv.h, saved_rgb_hsv.s, saved_rgb_hsv.v);
+#        endif
+                break;
+        }
+    }
+#    endif
+    return true;
+}
 #endif     // POINTING_DEVICE_ENABLE
 
 #ifdef RGB_MATRIX_ENABLE

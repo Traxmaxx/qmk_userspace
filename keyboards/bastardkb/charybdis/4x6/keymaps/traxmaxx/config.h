@@ -66,8 +66,8 @@
 // Natural scrolling (macOS style) for drag scroll
 #    define CHARYBDIS_DRAGSCROLL_REVERSE_Y
 #    define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_TIMEOUT_MS 1000
-#    define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_THRESHOLD 300
-#    define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_WINDOW_MS 400
+#    define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_THRESHOLD 100
+#    define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_WINDOW_MS 300
 #endif // POINTING_DEVICE_ENABLE
 
 // limits the number of LEDs to process in an animation per task run (increases keyboard responsiveness)
