@@ -58,13 +58,12 @@
 /* Charybdis-specific features. */
 
 #ifdef POINTING_DEVICE_ENABLE
-// Automatically enable the pointer layer when moving the trackball.  See also:
-#    define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
-// Natural scrolling (macOS style) for drag scroll
-#    define CHARYBDIS_DRAGSCROLL_REVERSE_Y
-#    define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_TIMEOUT_MS 1600
-#    define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_THRESHOLD 400
-#    define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_WINDOW_MS 600
+// QMK Automatic Mouse Layer
+#    define POINTING_DEVICE_AUTO_MOUSE_ENABLE
+#    define AUTO_MOUSE_DEFAULT_LAYER 3
+#    define AUTO_MOUSE_TIME 2000
+#    define AUTO_MOUSE_THRESHOLD 10
+#    define AUTO_MOUSE_DELAY 200
 #endif // POINTING_DEVICE_ENABLE
 
 // limits the number of LEDs to process in an animation per task run (increases keyboard responsiveness)
