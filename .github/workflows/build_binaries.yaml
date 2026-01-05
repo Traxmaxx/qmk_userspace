@@ -11,7 +11,7 @@ jobs:
         uses: qmk/.github/.github/workflows/qmk_userspace_build.yml@main
         with:
             qmk_repo: vial-kb/vial-qmk
-            qmk_ref: vial
+            qmk_ref: merge-2025-12-28
             preparation_command: "cp -rf keyboards/* qmk_firmware/keyboards/ && cp -rf modules/drashna/* qmk_firmware/modules/"
 
     publish:

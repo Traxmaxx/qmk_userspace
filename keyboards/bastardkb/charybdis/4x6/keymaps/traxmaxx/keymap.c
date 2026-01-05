@@ -23,7 +23,7 @@ enum charybdis_keymap_layers {
     LAYER_POINTER,
 };
 
-/** \brief Automatically enable sniping-mode on the pointer layer. */
+/** brief Automatically enable sniping-mode on the pointer layer. */
 // #define CHARYBDIS_AUTO_SNIPING_ON_LAYER LAYER_POINTER
 
 #define LOWER MO(LAYER_LOWER)
@@ -31,10 +31,13 @@ enum charybdis_keymap_layers {
 #define PT_Z LT(LAYER_POINTER, KC_Z)
 #define PT_SLSH LT(LAYER_POINTER, KC_SLSH)
 
+/** Define no-op for pointer keys if building with no trackball */
 #ifndef POINTING_DEVICE_ENABLE
 #    define DRGSCRL KC_NO
 #    define DPI_MOD KC_NO
+#    define DPI_RMOD KC_NO
 #    define S_D_MOD KC_NO
+#    define S_D_RMOD KC_NO
 #    define SNIPING KC_NO
 #endif // !POINTING_DEVICE_ENABLE
 
@@ -77,9 +80,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        _______, _______, _______, _______, _______, _______,    _______, _______, _______, _______, _______, KC_MUTE,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       _______, _______, _______, _______, _______, _______,    KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_NO,  KC_VOLU,
+       _______, _______, _______, _______, _______, _______,    KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, DPI_MOD,  KC_VOLU,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       _______, _______, _______, _______,  _______, _______,    _______, _______, _______, _______, _______, KC_VOLD,
+       _______, _______, _______, _______,  _______, _______,  _______, _______, _______, _______, DPI_RMOD, KC_VOLD,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   _______, _______, _______,    _______, _______,
                                            _______, _______,    _______
@@ -96,8 +99,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        _______, _______, _______, _______, _______, _______,    _______, _______, _______, _______, _______, _______,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
-                                  KC_BTN1, KC_BTN3, KC_BTN2,    _______, _______,
-                                           XXXXXXX, XXXXXXX,    KC_BTN1
+                                  MS_BTN1, MS_BTN3, MS_BTN2,    _______, _______,
+                                           XXXXXXX, XXXXXXX,    MS_BTN1
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
 };
