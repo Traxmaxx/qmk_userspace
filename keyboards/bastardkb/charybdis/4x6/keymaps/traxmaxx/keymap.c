@@ -140,7 +140,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     if (layer_state_is(LAYER_POINTER) && record->event.pressed) {
         switch (keycode) {
-            case KC_BTN1 ... KC_BTN8:
+            case MS_BTN1 ... MS_BTN8:
             case DRGSCRL:
             case DPI_MOD:
             case S_D_MOD:
