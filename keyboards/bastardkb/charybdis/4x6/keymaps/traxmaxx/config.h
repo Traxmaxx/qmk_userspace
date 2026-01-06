@@ -32,7 +32,7 @@
 /* Trackball DPI
  * Total range from 400 to 3,400 (400 → 600 → 800 → … → 3,400)
  */
-#define CHARYBDIS_MINIMUM_DEFAULT_DPI 3400
+#define CHARYBDIS_MINIMUM_DEFAULT_DPI 2600
 
 /* Pointing Device Acceleration Configuration
  * Taken from drashna/qmk_modules
@@ -57,6 +57,23 @@
 /* Disable unused features. */
 #    define NO_ACTION_ONESHOT
 #endif // __arm__
+
+/* Enable speculative key hold for better typing experience
+ * When a mod-tap key is pressed, the modifier is applied immediately.
+ * Supposing the mod-tap key is latter settled as tapped, the modifier is cancelled before sending the tapping key.
+ **/
+
+#define SPECULATIVE_HOLD
+
+/*  In its most basic description, a mod-tap key acts as the "mod" when held longer than the TAPPING_TERM
+ *  and otherwise as another function, such as a letter key, when held for less than that.
+ *  Like urob says, it is challenging to type with such consistent timing to use mod-tap keys based on this rule alone.
+ *  This motivates a "timeless" configuration where how long keys are held does not matter.
+ *  This is done by setting the TAPPING_TERM to a generous value, like 250 ms, or even larger
+ **/
+
+#define TAPPING_TERM 250
+
 
 /* Charybdis-specific features. */
 
