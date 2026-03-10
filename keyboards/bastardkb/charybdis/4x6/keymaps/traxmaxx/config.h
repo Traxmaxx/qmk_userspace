@@ -19,11 +19,6 @@
 /* Improve responsiveness */
 /* 1000Hz polling rate (1ms) */
 #define USB_POLLING_INTERVAL_MS 1
-/* Improve clock speed for faster matrix scanning
- * Lsuffix makes sure it's of type long
- */
-#define F_CPU 200000000L
-#define DIODE_DIRECTION ROW2COL
 
 /* Comboterm timeout
  * 35–40 if you press slowly
